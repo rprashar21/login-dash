@@ -1,8 +1,7 @@
 import React from 'react'
 import './App.css'
-import Counter from "./practice/Counter.jsx";
-import LoginForm from "./components/LoginSignup/LoginForm.jsx";
 import {LoginForm} from "./components/LoginSignup/LoginForm.jsx";
+
 
 function App() {
 
@@ -11,8 +10,8 @@ function App() {
             <div>
                 <LoginForm/>
             </div>
-           {/*<Counter/>*/}
-          {/*<LoginForm/>*/}
+            {/*<Counter/>*/}
+            {/*<LoginForm/>*/}
 
         </>
     )

@@ -22,11 +22,13 @@ export const LoginForm = () => {
                 const response = await checkUserExists(email);
                 if (response.data) {
                     // User exists, redirect to dashboard (replace with navigation in real app)
-                    alert('User exists! Redirecting to dashboard...');
+                    console.log(response.data)
+                   // alert('User exists! Redirecting to dashboard...');
                 } else {
                     // User does not exist
                     alert('User does not exist. Please register.');
                 }
+                // eslint-disable-next-line no-unused-vars
             } catch (error) {
                 // If backend returns 404 or error, treat as user not found
                 alert('User does not exist. Please register.');
